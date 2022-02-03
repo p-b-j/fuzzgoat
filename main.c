@@ -129,7 +129,7 @@ int main(int argc, char** argv)
         file_size = filestatus.st_size;
         file_contents = (char*)malloc(filestatus.st_size);
         if ( file_contents == NULL) {
-                fprintf(stderr, "Memory error: unable to allocate %d bytes\n", file_size);
+                fprintf(stderr, "memory error: unable to allocate %d bytes\n", file_size);
                 return 1;
         }
 
